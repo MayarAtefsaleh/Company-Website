@@ -23,10 +23,16 @@ This website was built using the following technologies:
 - **HTML**: Used for structuring the web pages.
 - **CSS**: Applied for styling and layout purposes.
 - **JavaScript**: Implemented for interactivity and dynamic functionality.
+- **Swiper libirary**
+- **normalize.css**
+- **node_modules**
 
 ## Responsive Design
 
 I have ensured that my website is fully responsive, providing an optimal viewing experience across various devices and screen sizes.
+
+## Design and Learning Sources
+The design of this website was created based on the knowledge and skills acquired from Elzero Web School and various YouTube videos related to web development.
 
 ## Usage
 
@@ -41,4 +47,5 @@ I welcome contributions to enhance my website. If you find any issues or have su
 Your feedback is important to me! If you have any questions, suggestions, or feedback regarding our website, please feel free to reach out to me.
 
 All rights are saved , this website is developed by me and the UI designed by Vhros
+
 
