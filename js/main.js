@@ -1,3 +1,16 @@
+function togglebar()
+{
+  const toggleButton = document.getElementsByClassName('toggle-menu')[0];
+  const navbarLinks = document.getElementsByClassName('nav-bars')[0];
+
+  toggleButton.addEventListener('click', () =>
+  {
+    navbarLinks.classList.toggle('active')
+  })
+}
+
+
+
 
 function filterImages ()
 {
@@ -37,24 +50,6 @@ function filterImages ()
 
 // filtering images 
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   function setupGalleryMedia(){
 
@@ -156,20 +151,6 @@ function filterImages ()
   }
 
   };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 function setupVideoPlayer()

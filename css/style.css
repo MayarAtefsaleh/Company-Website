@@ -62,7 +62,110 @@ header nav ul {
   display: flex;
 }
 
-@media (min-width: 1025px) {
+ header nav .toggle-menu {
+    display: none;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+
+  .nav-bars{
+    display:flex;
+  }
+  
+
+  header nav ul li a {
+  padding: 20px;
+  display: block;
+  color: #02204c;
+  font-size: 15px;
+  z-index: 2;
+  font: normal normal normal 15px/17px Ubuntu;
+  letter-spacing: 0px;
+  opacity: 1;
+  text-align: left;
+}
+
+header nav .lang ul li {
+  padding: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top:10px
+}
+
+header nav .icons{
+  margin-top:15px
+}
+header nav .icons ul li {
+  margin-left: 20px;
+  width: 8px;
+  height: 15px;
+  background: transparent url("img/Group 151.png") 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.li-active{
+  background:orange;
+  border-radius:50px;
+}
+
+  @media (max-width: 767px) {
+  header nav .toggle-menu {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .nav-bars , .uls{
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:0;
+    margin:0;
+  }
+
+  header nav .lang ul li {
+  padding: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top:0px
+}
+
+header nav .icons ul li {
+  margin-left: 0px;
+  width: 100%;
+  height: 100%;
+  gap:10px;
+}
+
+header nav ul {
+  padding:0;
+  margin:0;
+  gap:10px;
+}
+
+.nav-bars
+ { padding-top:20px;
+  padding-bottom:20px;
+  position: absolute;
+    top: 78%;
+    width: 100%;
+    background-color: rgb(255 255 255 / 90%);
+    z-index: 2;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+ .nav-bars{
+    display:none;
+  }
+
+   .nav-bars.active{
+    display:flex;
+  }
+  
+}
+
+
+/* @media (min-width: 1025px) {
   header nav .toggle-menu {
     display: none;
   }
@@ -163,7 +266,7 @@ header nav ul {
   header .icons {
     display: none;
   }
-}
+} */
 
 /* media for header 
 @media only screen and (min-width: 576px) and (max-width: 1200px) {
@@ -227,31 +330,6 @@ header nav ul {
 } */
 /* media for header  */
 
-header nav ul li a {
-  padding: 20px;
-  display: block;
-  color: #02204c;
-  font-size: 15px;
-  z-index: 2;
-  font: normal normal normal 15px/17px Ubuntu;
-  letter-spacing: 0px;
-  opacity: 1;
-  text-align: left;
-}
-
-header nav .lang ul li {
-  padding: 5px;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-header nav .icons ul li {
-  margin-left: 20px;
-  width: 8px;
-  height: 15px;
-  background: transparent url("img/Group 151.png") 0% 0% no-repeat padding-box;
-  opacity: 1;
-}
 
 /* End Header */
 

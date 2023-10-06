@@ -20,14 +20,15 @@
 <body>
   <!-- Start Header -->
   <header>
-    <div class="container">
+    <div class="container nav-links">
       <a href="#" class="logo">
         <img decoding="async" src="images/Image 51@2x.png" alt="Logo" />
       </a>
       <nav>
         <i class="fas fa-bars toggle-menu"></i>
-      <ul>
-        <li><a href="index.html" target="_blank">Home</a></li>
+        <div class="nav-bars">
+      <ul class="uls">
+        <li class="li-active"><a href="index.html" target="_blank">Home</a></li>
         <li><a href="about.html" target="_blank">About Us</a></li>
         <li><a href="services.html" target="_blank">Services</a></li>
         <li><a href="projects.html" target="_blank">Projects</a></li>
@@ -49,6 +50,7 @@
             <li><img src="images/Group 5.svg" alt="" /></li>
             <li><img src="images/Group 6.svg" alt="" /></li>
           </ul>
+        </div>
         </div>
       </nav>
     </div>
@@ -362,6 +364,7 @@
   <script>setupVideoPlayer();</script>
   <script>setupCarousel();</script>
   <script>setupCounter();</script>
+  <script>togglebar();</script>
 </body>
 
 </html>
