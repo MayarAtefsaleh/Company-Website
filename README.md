@@ -49,3 +49,7 @@ Your feedback is important to me! If you have any questions, suggestions, or fee
 All rights are saved , this website is developed by me and the UI designed by Vhros
 
 
+# Screen shots
+
+![image](https://github.com/MayarAtefsaleh/Company-Website/assets/89044139/b4f5f07f-5501-4d10-9ed6-7d23c41ca092)
+
