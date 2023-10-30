@@ -3,6 +3,16 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  
+scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -11,6 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
+  
 }
 
 ul {
@@ -62,18 +73,17 @@ header nav ul {
   display: flex;
 }
 
- header nav .toggle-menu {
-    display: none;
-    flex-direction:column;
-    justify-content:space-between;
-  }
+header nav .toggle-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  .nav-bars{
-    display:flex;
-  }
-  
+.nav-bars {
+  display: flex;
+}
 
-  header nav ul li a {
+header nav ul li a {
   padding: 20px;
   display: block;
   color: #02204c;
@@ -89,11 +99,11 @@ header nav .lang ul li {
   padding: 5px;
   margin-right: 5px;
   margin-left: 5px;
-  margin-top:10px
+  margin-top: 10px;
 }
 
-header nav .icons{
-  margin-top:15px
+header nav .icons {
+  margin-top: 15px;
 }
 header nav .icons ul li {
   margin-left: 20px;
@@ -103,67 +113,74 @@ header nav .icons ul li {
   opacity: 1;
 }
 
-.li-active{
-  background:orange;
-  border-radius:50px;
+.li-active {
+  background: orange;
+  border-radius: 50px;
 }
 
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
+  header {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
   header nav .toggle-menu {
     display: flex;
     cursor: pointer;
   }
 
-  .nav-bars , .uls{
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    padding:0;
-    margin:0;
+  .nav-bars,
+  .uls {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
   }
 
   header nav .lang ul li {
-  padding: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
-  margin-top:0px
-}
+    padding: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
 
-header nav .icons ul li {
-  margin-left: 0px;
-  width: 100%;
-  height: 100%;
-  gap:10px;
-}
+  header nav .icons ul li {
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+  }
 
-header nav ul {
-  padding:0;
-  margin:0;
-  gap:10px;
-}
+  header nav ul {
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+  }
 
-.nav-bars
- { padding-top:20px;
-  padding-bottom:20px;
-  position: absolute;
+  .nav-bars {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
     top: 78%;
     width: 100%;
     background-color: rgb(255 255 255 / 90%);
     z-index: 2;
     border-bottom-right-radius: 5%;
     border-bottom-left-radius: 5%;
-}
-
- .nav-bars{
-    display:none;
+    margin: auto;
+    left: 0%;
+    right: 65%;
   }
 
-   .nav-bars.active{
-    display:flex;
+  .nav-bars {
+    display: none;
   }
-  
-}
 
+  .nav-bars.active {
+    display: flex;
+  }
+}
 
 /* @media (min-width: 1025px) {
   header nav .toggle-menu {
@@ -329,7 +346,6 @@ header nav ul {
   }
 } */
 /* media for header  */
-
 
 /* End Header */
 
@@ -1198,6 +1214,7 @@ span {
 @media (max-width: 575px) {
   .contact-us-section {
     height: 100%;
+    padding-bottom: 20px;
   }
   .contact-us-section .container {
     align-items: center;
@@ -1310,7 +1327,7 @@ hr {
 
 /* footer media  */
 
-@media (max-width: 1024px)  {
+@media (max-width: 1024px) {
   .footer {
     display: flex;
     flex-direction: column;
@@ -1369,7 +1386,7 @@ hr {
   }
 }
 
-@media (max-width: 767px)  {
+@media (max-width: 767px) {
   .footer {
     display: flex;
     flex-direction: column;
@@ -1429,7 +1446,7 @@ hr {
 }
 
 @media (max-width: 575px) {
- .footer {
+  .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1439,6 +1456,8 @@ hr {
   .footer .container {
     flex-direction: column;
     align-items: center;
+    padding: 0;
+    margin: 0;
   }
 
   .footer .box {
@@ -1484,7 +1503,7 @@ hr {
     text-align: center;
     color: white;
     margin: 25px 0px 25px 0px;
-    max-width:250px;
+    max-width: 250px;
   }
 }
 
